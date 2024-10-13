@@ -71,7 +71,7 @@ A RESTful API built with Node.js and Express for managing webtoons. This API sup
    - Use Postman to test API endpoints.
    - For protected routes (POST and DELETE), include the JWT token in the header:
      ```
-     jwt: jwt your_jwt_token
+     jwt: your_jwt_token
      ```
 
 ## Rate Limiting
