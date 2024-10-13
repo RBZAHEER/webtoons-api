@@ -1,4 +1,4 @@
-```markdown
+
 # Webtoon API
 
 A RESTful API built with Node.js and Express for managing webtoons. This API supports CRUD operations, JWT-based authentication, and rate limiting for enhanced security. Input validation is done using Joi to ensure data integrity.
@@ -122,4 +122,4 @@ This project is licensed under License.
 ## Author
 
 ZAHEER MULANI :)
-```
+
