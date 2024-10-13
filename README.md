@@ -61,12 +61,12 @@ A RESTful API built with Node.js and Express for managing webtoons. This API sup
 
 2. **API Endpoints**
 
-# 1. **Get All Webtoons**
+ 1. **Get All Webtoons**
 - **Method**: `GET`
 - **Endpoint**: `http://localhost:5000/api/webtoons`
 - **Description**: Retrieve a list of all webtoons.
 
-# 2. **Add a New Webtoon**
+ 2. **Add a New Webtoon**
 - **Method**: `POST`
 - **Endpoint**: `http://localhost:5000/api/webtoons`
 - **Description**: Add a new webtoon.
@@ -84,14 +84,14 @@ A RESTful API built with Node.js and Express for managing webtoons. This API sup
   jwt: your_jwt_token
   ```
 
-# 3. **Get a Webtoon by ID**
+ 3. **Get a Webtoon by ID**
 - **Method**: `GET`
 - **Endpoint**: `http://localhost:5000/api/webtoons/:id`
 - **Description**: Retrieve a specific webtoon by its ID.
 - **URL Parameters**:
   - `id`: The ID of the webtoon to retrieve.
 
-# 4. **Delete a Webtoon by ID**
+ 4. **Delete a Webtoon by ID**
 - **Method**: `DELETE`
 - **Endpoint**: `http://localhost:5000/api/webtoons/:id`
 - **Description**: Delete a specific webtoon by its ID.
