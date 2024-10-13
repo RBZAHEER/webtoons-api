@@ -59,12 +59,49 @@ A RESTful API built with Node.js and Express for managing webtoons. This API sup
 
    The server will run on `http://localhost:5000`.
 
-2. **API Endpoints**:
+2. **API Endpoints**
 
-   - **Get all webtoons**: `GET /api/webtoons`
-   - **Add a new webtoon**: `POST /api/webtoons` (requires JWT token in the header)
-   - **Get a webtoon by ID**: `GET /api/webtoons/:id`
-   - **Delete a webtoon by ID**: `DELETE /api/webtoons/:id` (requires JWT token in the header)
+### 1. **Get All Webtoons**
+- **Method**: `GET`
+- **Endpoint**: `/api/webtoons`
+- **Description**: Retrieve a list of all webtoons.
+
+### 2. **Add a New Webtoon**
+- **Method**: `POST`
+- **Endpoint**: `/api/webtoons`
+- **Description**: Add a new webtoon.
+- **Request Body**:
+  ```json
+  {
+      "title": "Webtoon Title",
+      "description": "Description of the webtoon",
+      "characters": ["Character 1", "Character 2"]
+  }
+  ```
+- **Authorization**: Requires JWT token in the header.
+- **Header**: 
+  ```
+  jwt: your_jwt_token
+  ```
+
+### 3. **Get a Webtoon by ID**
+- **Method**: `GET`
+- **Endpoint**: `/api/webtoons/:id`
+- **Description**: Retrieve a specific webtoon by its ID.
+- **URL Parameters**:
+  - `id`: The ID of the webtoon to retrieve.
+
+### 4. **Delete a Webtoon by ID**
+- **Method**: `DELETE`
+- **Endpoint**: `/api/webtoons/:id`
+- **Description**: Delete a specific webtoon by its ID.
+- **URL Parameters**:
+  - `id`: The ID of the webtoon to delete.
+- **Authorization**: Requires JWT token in the header.
+- **Header**:
+  ```
+  jwt: your_jwt_token
+  ```
 
 3. **Testing with Postman**:
 
@@ -73,7 +110,6 @@ A RESTful API built with Node.js and Express for managing webtoons. This API sup
      ```
      jwt: your_jwt_token
      ```
-
 ## Rate Limiting
 
 To test the rate limiter, you can repeatedly call the API endpoints to see the restrictions in action. The rate limit is set in the `utils/rateLimiter.js` file.
