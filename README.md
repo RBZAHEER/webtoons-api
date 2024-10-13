@@ -1,5 +1,3 @@
-Here's a well-structured README file for your Webtoon API project. I've added appropriate headings and formatting for clarity:
-
 ```markdown
 # Webtoon API
 
