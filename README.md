@@ -29,8 +29,8 @@ A RESTful API built with Node.js and Express for managing webtoons. This API sup
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/RBZAHEER/webtoon-api.git
-   cd webtoon-api
+   git clone https://github.com/RBZAHEER/webtoons-api.git
+   cd webtoons-api
    ```
 
 2. **Install dependencies**:
